@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Display Management System</h1>
+    <p>Google Sheets Based Target Management Software</p>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Master</h2>
+      <button onclick="showMsg('Company Master')">Company Create</button>
+      <button onclick="showMsg('Store Master')">Store Create</button>
+      <button onclick="showMsg('Brand Master')">Brand Create</button>
+    </div>
+
+    <div class="card">
+      <h2>Entry</h2>
+      <button onclick="showMsg('Display Entry')">Display</button>
+      <button onclick="showMsg('Target Entry')">Target</button>
+      <button onclick="exportExcel()">Export Excel</button>
+    </div>
+
+    <div class="card">
+      <h2>Status</h2>
+      <div id="output">Ready</div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
